@@ -1,0 +1,27 @@
+page-login {
+    .row{
+        display:block;
+        text-align:center;
+        padding-top:5%;
+    }
+    
+    .login_lo{
+        width:40%;
+    }
+    
+    .register_lo{
+        width:40%;
+    }
+
+    .kakao_lo{
+        height:30px;
+    }
+
+    .forgot_lo{
+        text-align: left;
+    }
+
+    .forgot_lo .button-inner{
+        display: inline;
+    }
+}

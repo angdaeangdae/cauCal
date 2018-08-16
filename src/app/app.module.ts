@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { RegisterPageModule}  from '../pages/register/register.module';
 import { ConfirmPageModule} from '../pages/confirm/confirm.module';
 import { IdDataProvider } from '../providers/id-data/id-data';
+import { LoginPageModule } from '../pages/login/login.module'
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { IdDataProvider } from '../providers/id-data/id-data';
     BrowserModule,
     RegisterPageModule,
     ConfirmPageModule,
+    LoginPageModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
