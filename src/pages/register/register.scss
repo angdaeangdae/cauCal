@@ -1,0 +1,36 @@
+page-register {
+
+    ion-content
+    {
+        white-space:normal;
+        position: relative;
+    }
+    ion-radio
+    {
+     //   background-color: aqua;
+    }
+
+    .reds
+    {
+        background-color: rgb(0, 76, 151);
+        color: white;
+        border-color:  rgb(0, 76, 151);
+    }
+
+    .green
+    {
+        background-color: rgb(138, 138, 138);
+        color: white;
+        border-color:  rgb(138, 138, 138);
+    }
+    
+    .checks{
+        background-color: white;
+        border-color: white;
+        color: rgba(212, 14, 14, 0.623);
+    }
+    ion-button{
+        font-size: 20%;
+    }
+
+}

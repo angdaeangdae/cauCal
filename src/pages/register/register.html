@@ -1,0 +1,83 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar [hideBackButton]="true">
+    <ion-title>register</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col col-6>
+                <ion-item >
+                    <ion-label large>아이디 :</ion-label> 
+                    <ion-input large name="id"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col col-6>
+                    <button round outline large class="checks" ion-button (click)="moveToConfirm()"> 중복확인</button>
+            </ion-col>
+        </ion-row>
+        <ion-item>
+            <ion-label>패스워드 : </ion-label>
+            <ion-input name="pwd"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+            <ion-label>패스워드 재확인: </ion-label>
+            <ion-input name="pwConf"></ion-input>    
+        </ion-item>
+        
+        <ion-item>
+            <ion-label>이름 :</ion-label> 
+            <ion-input name="names"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+            <ion-label>학교 :</ion-label> 
+            <ion-input name="university"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+            <ion-label>전화번호 :</ion-label> 
+            <ion-input name="phone"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+            <ion-label>이메일 : </ion-label>
+            <ion-input name="email"></ion-input>
+        </ion-item>
+        <ion-row radio-group [(ngModel)]="autoManufactures">
+          <ion-col col-6>
+            <ion-item>
+              <ion-label>남 </ion-label>
+              <ion-radio value="male" checked></ion-radio>
+          </ion-item>
+          </ion-col>
+          <ion-col col-6>
+            <ion-item>
+              <ion-label>여 </ion-label>
+              <ion-radio value="female"></ion-radio>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-6>
+              <button round outline block large class="reds" ion-button (click)="moveToLoginPage()"> 로그인 </button>
+          </ion-col>
+          <ion-col col-6>
+              <button round outline block large class="green" ion-button (click)="moveToLoginPage()"> 회원가입 </button>
+          </ion-col>
+        </ion-row>
+    </ion-grid>
+     
+
+</ion-content>
